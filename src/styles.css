@@ -1,0 +1,190 @@
+/* Imported google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', Arial, Helvetica;
+  color: white;
+}
+
+body {
+  background-color: #041C32;
+  .main {
+    max-width: 900px;
+    width: 96%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 0;
+    .section-1 {
+      .div-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        margin: 10px 0 25px 0;
+        .head-text-1 {
+          font-size: 24px;
+        }
+        .head-text-2 {
+          font-size: 18px;
+        }
+      }
+      .div-2 {
+        background-color: #144272;
+        padding: 8px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+        border-radius: 6px;
+        .fa-user {
+          font-size: 32px;
+        }
+        .profile {
+          background-color: aliceblue;
+          width: 82%;
+          height: 50px;
+          outline: none;
+          border: none;
+          font-size: 20px;
+          border-radius: 6px;
+          background-color: transparent;
+          color: #DDE6ED;
+          padding-left: 4px;
+        }
+        .btn-primary {
+          border-radius: 6px;
+          height: 50px;
+          width: 108px;
+          font-size: 18px;
+          font-weight: 700;
+          border: none;
+          background-color: #1363DF;
+        }
+      }
+      .div-3 {
+        background-color: #144272;
+        border-radius: 6px;
+        padding: 3%;
+        .subdiv-1 {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          .image-1 {
+            height: 116px;
+            width: 116px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background-color: blue;
+            margin-right: 30px;
+          }
+          .personal-detail {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .name-text {
+              font-size: 32px;
+              font-weight: 400;
+              color: #DFF6FF;
+
+            }
+            .username{
+              font-size: 12px;
+              color: #1363DF;
+              margin-bottom: 10px;
+            } 
+            .created-date {
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
+        .subdiv-2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          margin-bottom: 20px;
+          .bio {
+              margin: 0 auto;
+              width: 100%;
+              margin-bottom: 20px;
+          }
+          .following-details {
+            background-color: #041C32;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 6px;
+            .table {
+              padding: 10px;
+              width: 100%;
+              .table-row {
+                background-color: transparent;
+                .table-head {
+                  font-size: 20px;
+                  color: #DDE6ED;
+                  width: 33.33%;
+                  font-weight: 400;
+                  text-align: center;
+                  padding-bottom: 10px;
+                }
+              }
+              .table-row-1 {
+                background-color: transparent;
+                .table-head-1 {
+                  width: 33.33%;
+                  text-align: center;
+                  color: #ffffff;
+                  font-size: 24px;
+                  font-weight: 700;
+                }
+              }
+
+            }
+          }
+          
+        }
+        .subdiv-3 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end;
+          .cover-div {
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 8px;
+            .other-details {
+              padding: 8px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .icon {
+                display: grid;
+                place-items: center;
+                width: 35px;
+                margin-right: 10px;
+                font-size: 30px;
+                font-weight: 800;
+              }
+              .other-text {
+                font-size: 20px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
