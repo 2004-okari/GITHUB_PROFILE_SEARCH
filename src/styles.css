@@ -45,8 +45,9 @@ body {
         align-items: center;
         margin-bottom: 18px;
         border-radius: 6px;
-        .fa-user {
-          font-size: 32px;
+        .icon-1 {
+          font-size: 26px;
+          color: #1363DF;
         }
         .profile {
           background-color: aliceblue;
@@ -68,6 +69,13 @@ body {
           font-weight: 700;
           border: none;
           background-color: #1363DF;
+          &:hover {
+            background-color: #47B5FF;
+          }
+          &:active {
+            background-color: #256D85;
+            color: #041C32;
+          }
         }
       }
       .div-3 {
@@ -79,8 +87,10 @@ body {
           align-items: center;
           margin-bottom: 20px;
           .image-1 {
-            height: 116px;
-            width: 116px;
+            max-height: 116px;
+            max-width: 116px;
+            width: 106px;
+            height: 106px;
             border-radius: 50%;
             border: none;
             outline: none;
