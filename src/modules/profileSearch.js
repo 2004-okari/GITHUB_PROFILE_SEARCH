@@ -16,14 +16,13 @@ const userOrg = document.querySelector('.organisation');
 const searchUser = async (user) => {
   const response = await fetch(`${API_URL}${user}`);
   const data = await response.json();
-  console.log(data);
 
   userImage.setAttribute('src', data.avatar_url);
   userActualName.innerHTML = data.name;
   userName.innerHTML = data.login;
   userEntryDate.innerHTML = `Joined on ${data.created_at}`;
   userBio.innerHTML = data.bio;
-  userRepo.innerHTML = data.public_repos
+  userRepo.innerHTML = data.public_repos;
   userFollower.innerHTML = data.followers;
   userFollowing.innerHTML = data.following;
 
@@ -44,7 +43,7 @@ const searchUser = async (user) => {
   }
 
   if (data.twitter_username === null) {
-    userSocial.innerHTML = 'Social presence not available'
+    userSocial.innerHTML = 'Social presence not available';
     userSocial.style.color = '#445069';
   } else {
     userSocial.innerHTML = data.twitter_username;
@@ -52,10 +51,10 @@ const searchUser = async (user) => {
 
   if (data.company === null) {
     userOrg.innerHTML = 'Company not available';
-    userOrg.style.color = '#445069'
+    userOrg.style.color = '#445069';
   } else {
-    userOrg.innerHTML = data.company
+    userOrg.innerHTML = data.company;
   }
-}
+};
 
 export default searchUser;
